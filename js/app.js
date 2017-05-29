@@ -1,4 +1,4 @@
-angular.module('noserver', ['ui.router', 'chart.js'])
+angular.module('noserver', ['ui.router'])
 .config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.when('', '/');
 
