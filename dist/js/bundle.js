@@ -23,6 +23,20 @@ angular.module('noserver', ['ui.router']).config(function ($stateProvider, $urlR
 });
 'use strict';
 
+angular.module('noserver').directive('fiveDay', function () {
+    return {
+        templateUrl: '../../views/fiveDayTmpl.html'
+    };
+});
+'use strict';
+
+angular.module('noserver').directive('homeDir', function () {
+    return {
+        templateUrl: '../../views/homeTmpl.html'
+    };
+});
+'use strict';
+
 angular.module('noserver').controller('mainCtrl', function ($scope, mainSvc) {
 
     $scope.hours;
@@ -66,20 +80,6 @@ angular.module('noserver').service('mainSvc', function ($http, config) {
     this.getData = function () {
         // return $http.get(`https://api.wunderground.com/api/${config.API_key}/geolookup/conditions/hourly/forecast/forecast10day/webcams/animatedradar/satellite/q/autoip.json`)
         return $http.get('../../api.json');
-    };
-});
-'use strict';
-
-angular.module('noserver').directive('fiveDay', function () {
-    return {
-        templateUrl: '../../views/fiveDayTmpl.html'
-    };
-});
-'use strict';
-
-angular.module('noserver').directive('homeDir', function () {
-    return {
-        templateUrl: '../../views/homeTmpl.html'
     };
 });
 //# sourceMappingURL=bundle.js.map
