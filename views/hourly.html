@@ -1,0 +1,35 @@
+<div class="five-day-container">
+    <div style="height: 50px"></div>
+    <table>
+        <tr class="five-day-top-bar">
+            <th>DAY</th>
+            <th>DESCRIPTION</th>
+            <th>TEMP</th>
+            <th>FEELS</th>
+            <th>PRECIP</th>
+            <th>HUMIDITY</th>
+            <th>WIND</th>
+        </tr>
+        <tr ng-repeat="weather in hourly">
+            <td class="five-day-day">
+                <div>
+                    <div>{{weather.FCTTIME.civil}}</div>
+                    <div>{{weather.FCTTIME.weekday_name_abbrev}}</div>
+                </div>
+                <div>
+                    <img src="{{weather.icon_url}}"></img>
+                </div>
+
+            </td>
+            <td class='table-data-style'>{{weather.condition}}</td>
+            <td>{{weather.temp.english}}°</td>
+            <td>{{weather.feelslike.english}}°</td>
+            <td>{{weather.qpf.english}} in</td>
+            <td>{{weather.humidity}}%</td>
+            <td>{{weather.wdir.dir}} {{weather.wspd.english}} mph</td>
+
+        </tr>
+
+    </table>
+    
+</div>

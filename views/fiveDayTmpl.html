@@ -1,0 +1,126 @@
+<div class="five-day-container">
+    <div style="height: 50px"></div>
+    <table>
+        <tr class="five-day-top-bar">
+            <th>DAY</th>
+            <th>DESCRIPTION</th>
+            <th>HIGH / LOW</th>
+            <th>PRECIP</th>
+            <th>WIND</th>
+            <th>HUMIDITY</th>
+        </tr>
+        <tr>
+            <td class="five-day-day">
+                <div>
+                    <div>Today</div>
+                    <div>{{simpleFor.forecastday[0].date.monthname}} {{simpleFor.forecastday[0].date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{simpleFor.forecastday[0].icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td class='table-data-style'>{{simpleFor.forecastday[0].conditions}}</td>
+            <td>{{simpleFor.forecastday[0].high.fahrenheit}}°/{{simpleFor.forecastday[0].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[0].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[0].maxwind.dir}} {{simpleFor.forecastday[0].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[0].avehumidity}}%</td>
+
+        </tr>
+        <tr>
+            <td class="five-day-day">
+                <div>
+                    <div>{{simpleFor.forecastday[1].date.weekday}}</div>
+                    <div>{{simpleFor.forecastday[1].date.monthname}} {{simpleFor.forecastday[1].date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{simpleFor.forecastday[1].icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td>{{simpleFor.forecastday[1].conditions}}</td>
+            <td>{{simpleFor.forecastday[1].high.fahrenheit}}°/{{simpleFor.forecastday[1].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[1].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[1].maxwind.dir}} {{simpleFor.forecastday[1].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[1].avehumidity}}%</td>
+
+        </tr>
+        <tr style="">
+            <td class="five-day-day">
+                <div style="position: relative">
+                    <div>{{simpleFor.forecastday[2].date.weekday}}</div>
+                    <div>{{simpleFor.forecastday[2].date.monthname}} {{simpleFor.forecastday[2].date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{simpleFor.forecastday[2].icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td>{{simpleFor.forecastday[2].conditions}}</td>
+            <td>{{simpleFor.forecastday[2].high.fahrenheit}}°/{{simpleFor.forecastday[2].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[2].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[2].maxwind.dir}} {{simpleFor.forecastday[2].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[2].avehumidity}}%</td>
+
+        </tr>
+        <tr>
+            <td class="five-day-day">
+                <div>
+                    <div>{{simpleFor.forecastday[3].date.weekday}}</div>
+                    <div>{{simpleFor.forecastday[3].date.monthname}} {{simpleFor.forecastday[3].date.day}}</div>
+                </div>
+
+                <img src="{{simpleFor.forecastday[3].icon_url}}" alt="" />
+
+
+            </td>
+            <td>{{simpleFor.forecastday[3].conditions}}</td>
+            <td>{{simpleFor.forecastday[3].high.fahrenheit}}°/{{simpleFor.forecastday[3].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[3].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[3].maxwind.dir}} {{simpleFor.forecastday[3].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[3].avehumidity}}%</td>
+
+        </tr>
+        <tr>
+            <td class="five-day-day">
+                <div>
+                    <div>{{simpleFor.forecastday[4].date.weekday}}</div>
+                    <div>{{simpleFor.forecastday[4].date.monthname}} {{simpleFor.forecastday[3].date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{simpleFor.forecastday[4].icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td>{{simpleFor.forecastday[4].conditions}}</td>
+            <td>{{simpleFor.forecastday[4].high.fahrenheit}}°/{{simpleFor.forecastday[4].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[4].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[4].maxwind.dir}} {{simpleFor.forecastday[4].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[4].avehumidity}}%</td>
+
+        </tr>
+        <tr>
+            <td class="five-day-day">
+                <div>
+                    <div>{{simpleFor.forecastday[5].date.weekday}}</div>
+                    <div>{{simpleFor.forecastday[5].date.monthname}} {{simpleFor.forecastday[0].date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{simpleFor.forecastday[5].icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td>{{simpleFor.forecastday[5].conditions}}</td>
+            <td>{{simpleFor.forecastday[5].high.fahrenheit}}°/{{simpleFor.forecastday[5].low.fahrenheit}}°</td>
+            <td>{{simpleFor.forecastday[5].qpf_allday.in}} in</td>
+            <td>{{simpleFor.forecastday[5].maxwind.dir}} {{simpleFor.forecastday[5].maxwind.mph}} mph</td>
+            <td>{{simpleFor.forecastday[5].avehumidity}}%</td>
+
+        </tr>
+
+
+
+    </table>
+
+
+</div>

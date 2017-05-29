@@ -1,0 +1,56 @@
+<!--<input type="text" placeholder="Enter State or Country" ng-model="newState">
+<input type="text" placeholder="Enter City" ng-model="newCity">
+<button ng-click="addLocation()">Submit</button>-->
+<section class="content">
+
+    <div class="main-container">
+        <div class="view-desc">
+            <h1>Current conditions in: {{city}}, {{state}}</h1>
+        </div>
+        <div class="current-temp-cont">
+            <div class="current-temp" style="background-image: url('{{background}}'); background-repeat: no-repeat; background-size: cover">
+                <div class="current-temp-top">
+                    <div>
+                        <div class="temp">{{current.temp_f}}°</div>
+                        <div style="font-size: 20px">{{current.weather}}</div>
+
+                    </div>
+                    <div>
+                        <img class="temp-img" src="{{current.icon_url}}"></img>
+                    </div>
+                </div>
+
+                <div class="current-temp-bottom">
+                    <div>feels like {{current.feelslike_f}}°</div>
+                    <div>H {{simpleFor.forecastday[0].high.fahrenheit}}° / L {{simpleFor.forecastday[0].low.fahrenheit}}°</div>
+                    <div>UV Index {{current.UV}} of 10</div>
+                </div>
+
+            </div>
+            <div class="right-now">
+                <div style="text-align: center; border: none">RIGHT NOW</div>
+                <div class="border-line-bottom"><span class="bold">Wind: </span></br>{{current.wind_mph}} mph</div>
+                <div class="border-line-bottom"><span class="bold">Wind gust: </span></br>{{current.wind_gust_mph}} mph</div>
+                <div class="border-line-bottom"><span class="bold">Humidity: </span></br>{{current.relative_humidity}}</div>
+                <div class="border-line-bottom"><span class="bold">Dew Point: </span></br>{{current.dewpoint_f}}°</div>
+                <div class="border-line-bottom"><span class="bold">Pressure: </span></br>{{current.pressure_in}} in</div>
+                <div><span class="bold">Visibility: </span></br>{{current.visibility_mi}} mi</div>
+            </div>
+            <div class="satellite-img-cont">
+                <img class="satellite-img" src="{{satellite.image_url}}" />
+                <img class="satellite-img" src="{{satellite.image_url_ir4}}" />
+
+            </div>
+
+        </div>
+        <div class="webcam-input">
+            <form name="myFrom">
+                <label for="webcam">Webcam Images:</label>
+                <select name='webcam' ng-model="webcam.images">
+                    <option ng-repeat="cam in webcams" value="{{cam.CURRENTIMAGEURL}}">{{cam.camid}} {{cam.neighborhood}}</option>
+                    
+                </select>
+            </form>
+            <img src="{{webcam.images}}" alt="">
+        </div>
+</section>

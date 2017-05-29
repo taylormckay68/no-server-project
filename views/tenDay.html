@@ -1,0 +1,34 @@
+<div class="five-day-container">
+    <div style="height: 50px"></div>
+    <table>
+        <tr class="five-day-top-bar">
+            <th>DAY</th>
+            <th>DESCRIPTION</th>
+            <th>HIGH / LOW</th>
+            <th>PRECIP</th>
+            <th>WIND</th>
+            <th>HUMIDITY</th>
+        </tr>
+        <tr ng-repeat="weather in tenday">
+            <td class="five-day-day">
+                <div>
+                    <div>{{weather.date.weekday}}</div>
+                    <div>{{weather.date.monthname}} {{weather.date.day}}</div>
+                </div>
+                <div>
+                    <img src="{{weather.icon_url}}" alt="" />
+                </div>
+
+            </td>
+            <td class='table-data-style'>{{weather.conditions}}</td>
+            <td>{{weather.high.fahrenheit}}°/{{weather.low.fahrenheit}}°</td>
+            <td>{{weather.qpf_allday.in}} in</td>
+            <td>{{weather.maxwind.dir}} {{weather.maxwind.mph}} mph</td>
+            <td>{{weather.avehumidity}}%</td>
+
+        </tr>
+
+    </table>
+
+   
+</div>

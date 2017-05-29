@@ -1,4 +1,244 @@
-.placeholder {
-  color: red; }
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+.footer {
+  height: 100px;
+  width: 100%;
+  margin-top: 20px; }
+
+.border {
+  border: 1px solid #d9dbda; }
+
+a:link {
+  /* Applies to all unvisited links */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: "Comic Sans MS", cursive; }
+
+a:visited {
+  /* Applies to all visited links */
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+  font-family: "Comic Sans MS", cursive; }
+
+a:hover {
+  /* Applies to links under the pointer */
+  text-decoration: none;
+  font-weight: bold;
+  color: orange;
+  font-family: "Comic Sans MS", cursive; }
+
+body {
+  background-color: #d9dbda;
+  width: 100vw;
+  font-family: "Comic Sans MS", cursive; }
+
+* {
+  font-family: "Comic Sans MS", cursive; }
+
+.header {
+  background-color: black;
+  height: 50px;
+  width: 100%; }
+
+.navbar {
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-size: 20px;
+  align-items: center;
+  text-decoration: none;
+  color: white;
+  background: #000000;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #000000 0%, #d9dbda 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #000000 0%, #d9dbda 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #000000 0%, #d9dbda 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#999999', GradientType=0);
+  /* IE6-9 */ }
+  .navbar li a img {
+    height: 50px;
+    width: 50px; }
+
+.navbar li {
+  text-decoration: none; }
+
+.content {
+  width: 100vw;
+  display: flex;
+  justify-content: center; }
+
+.main-container {
+  width: 60vw;
+  margin: 0 auto; }
+
+.view-desc {
+  font-size: 36px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: "Comic Sans MS", cursive; }
+
+.current-temp-cont {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 25px;
+  height: 415px; }
+
+.current-temp {
+  width: 20vw;
+  margin-left: 10px;
+  color: white;
+  padding: 40px 20px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 25px; }
+
+.current-temp-bottom {
+  font-family: "Comic Sans MS", cursive;
+  line-height: 24px;
+  font-size: 18px; }
+
+.current-temp-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-family: "Comic Sans MS", cursive;
+  margin-bottom: 25px;
+  line-height: 60px;
+  flex-wrap: wrap; }
+
+.temp {
+  font-size: 75px;
+  font-family: "Comic Sans MS", cursive; }
+
+.temp img {
+  height: 80px;
+  width: 80px; }
+
+.right-now {
+  width: 25%;
+  font-family: "Comic Sans MS", cursive;
+  padding: 15px;
+  background: white;
+  font-family: "Comic Sans MS", cursive;
+  font-size: 18px;
+  line-height: 24px;
+  box-shadow: 10px 10px 10px black;
+  border-radius: 25px; }
+
+.right-now div {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.satellite-img-cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .satellite-img-cont .satellite-img {
+    height: 19vh; }
+
+.border-line-bottom {
+  border-bottom: 1px solid #d9dbda; }
+
+.bold {
+  font-weight: bold; }
+
+.five-day-container {
+  display: grid;
+  width: 70vw;
+  height: 100%;
+  margin-left: 15vw; }
+
+.five-day-top-bar {
+  background-color: lightblue;
+  vertical-align: center;
+  text-align: center; }
+
+.five-day-day {
+  display: flex;
+  position: relative; }
+
+.five-day-day img {
+  position: absolute;
+  right: 5px; }
+
+table {
+  width: 100%;
+  background: white; }
+  table tr {
+    margin: 15px 0;
+    border-bottom: 1px solid #d9dbda; }
+    table tr th {
+      margin: 15px 0;
+      padding: 15px 0;
+      text-align: center; }
+    table tr td {
+      text-align: center;
+      margin: 15px 0;
+      line-height: 22px;
+      vertical-align: middle; }
+      table tr td div {
+        padding-left: 10px; }
+
+.webcam-input {
+  margin-top: 30px;
+  text-align: center; }
+  .webcam-input img {
+    margin-top: 20px;
+    min-width: 300px;
+    max-width: 50vw; }
 
 /*# sourceMappingURL=maps/styles.css.map */
