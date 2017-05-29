@@ -5,7 +5,7 @@ angular.module('noserver', ['ui.router']).config(function ($stateProvider, $urlR
 
     $stateProvider.state('home', {
         url: '/',
-        templateUrl: '../views/home.html',
+        templateUrl: 'home.html',
         controller: 'mainCtrl'
     }).state('five-day', {
         url: '/5day',
